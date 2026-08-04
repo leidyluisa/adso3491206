@@ -1,7 +1,7 @@
 /* fonts: poppins*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
-    background: linear-gradient(90deg, black , skyblue); );
+    background: linear-gradient(45deg, black , skyblue); 
     color : #fffc;
     font-family: Poppins;
     font-weight: 400;
@@ -9,8 +9,66 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    nav.back{
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        a:link, a:visited {
+            background-color: #fff3;
+            border: 2px solid white;
+            border-radius: 50%;
+            height: 34px;
+            display: flex;
+            padding: 0.4rem;
+            align-items: center;
+            justify-content: center;
+            width: 34px;
+            color:white ;
+            transform: scale(0.8) ;   
+            transition: all 0.4s ease-in;
+            &:hover{
+                transform: scale(1);
+            }
+        }
+    }
+    &.html {
+      background: linear-gradient(45deg, black , #e44d26);
+        main{
+            menu.mainmenu {
+                a:link, a:visited {
+                    span{
+                        background-color: white;
+                        height: 50px;
+                        width: 50px;
+                    }
+                    aside{
+                        h4{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+        section{
+            h2.subtitle{
+                color: white;
+                border-bottom: 2px dotted white;
+                padding-bottom: 0.4rem;
+            }
+        }
+    }
     main{
+        background:lineal-gradient(#0006 , #0000);
         header.mainmenu{
+            & internal{
+                h1{
+                    fzont-size: 2rem;
+                }
+                img{
+                    height: 120px;
+                    width: 120px;
+                }
+            }
             h1{ 
                 color: #fffc;
                 border-bottom: 2px solid #fffc;
@@ -60,7 +118,7 @@ body {
                     background-color: #fff9;
                     width: 320px;
                     display: flex;
-                    justify-content: center;
+                    justify-content: start;
                     align-items: center;
                     padding: 0.6rem;
                     text-decoration: none;
@@ -75,7 +133,6 @@ body {
                         display: flex;
                         font-size: 1.4rem ;
                         justify-content: center;
-                        margin-left: 0.6rem;
                         align-items: center;
                         height: 60px;
                         width: 60px;
@@ -97,6 +154,14 @@ body {
                         }
                     }
                 }
+            }
+            section{
+                background-color: #0009;
+                border-radius: 0.4rem;
+                margin-top: 1rem;
+                padding: 1rem;
+                min-height: 200px;
+                width: 380px;
             }
         }
 }   
