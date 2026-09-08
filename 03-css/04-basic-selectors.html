@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-basic-selectors.html</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <style>
+        /* Universal selector (*) */
+       /* * {border: 1px solid yellow;}*/
+        /* merge selectors */
+       section#sec01 h4 {
+            border: none;
+            text-align: center;
+           &.upper {text-transform: uppercase;}
+           &.rotate {transform: rotate(-45deg);}
+           &.txt-lg {font-size: 4rem;}
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm46-90a6,6,0,0,1-6,6H102.49l21.75,21.76a6,6,0,1,1-8.48,8.48l-32-32a6,6,0,0,1,0-8.48l32-32a6,6,0,0,1,8.48,8.48L102.49,122H168A6,6,0,0,1,174,128Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu">
+            <h1>04-basic-selectors</h1>
+            <img src="../src/imgs/logo-css.png" alt="">
+            <ul>
+                <li>Universal (*)</li>
+                <li>Type / Tag (p)</li>
+                <li>Descending (div p)</li>
+                <li>Class (.important)</li>
+                <li>ID (#cod389)</li>
+                <li>Merge (div#user3 p.title)</li>
+                <li>Group (div.lg,div.sm)</li>
+            </ul>
+        </header>
+        <section id="sec01">
+            <h2 class="subtitle">Example:</h2>
+            <h4 class="upper rotate txt-lg">adso</h4>
+
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-document-style</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <style>
+        div.flag {
+            align-items: center;
+            display: flex;
+            height: 200px;
+            justify-content: center;
+            margin: 1rem auto;
+            width: 280px;
+            &.colombia {
+
+                background: linear-gradient(to bottom, #ffcd00 50%, #003087 50%, #003087 75%, #c8102e 75% );
+                
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm46-90a6,6,0,0,1-6,6H102.49l21.75,21.76a6,6,0,1,1-8.48,8.48l-32-32a6,6,0,0,1,0-8.48l32-32a6,6,0,0,1,8.48,8.48L102.49,122H168A6,6,0,0,1,174,128Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu">
+            <h1>00-template</h1>
+            <img src="../src/imgs/logo-css.png" alt="">
+            <h3>This way we can include CSS within the style tag, it is very useful when you only have an html document.</h3>
+        </header>
+        <section>
+            <h2 class="subtitle">Colombia Flag</h2>
+            <div class="flag colombia"></div>
+        </section>
+    </main>
+</body>
+</html>
