@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>oo-templete</title>
+    <title>05-advanced-selectors</title>
     <link rel="stylesheet" href="../src/css/style.css">
+    <style>
+         ul.fruits > li[class="highlight"] {
+                    background-color: #ff06;
+                    padding: 0.2rem;
+        }
+    </style>
 </head>
 <body class="css">
     <nav class="back">
@@ -14,12 +20,25 @@
     </nav>
     <main>
         <header class="mainmenu">
-            <h1>00-template</h1>
+            <h1>05-advanced-selectors</h1>
             <img src="../src/imgs/logo-css.png" alt="">
-            <h3>definition</h3>
+            <ul>
+
+                <li>Children (>)</li>
+                <li>Adjacent/Sibling (+)</li>
+                <li>Attribute [class]</li>
+                
+            </ul>
         </header>
         <section>
-            <h2 class="subtitle">Example:</h2>
+             <h2 class="subtitle">Example:</h2>
+             <ul class="fruits">
+                <li>Orange 🍊</li>
+                <li>Apple 🍎</li>
+                <li class="highlight">Lemon 🍋</li>
+                <li>Strawberry 🍓</li>
+                <li>Grapes 🍇</li>
+             </ul>
         </section>
     </main>
 </body>

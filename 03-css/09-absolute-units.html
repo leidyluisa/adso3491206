@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>oo-templete</title>
+    <title>09-Absolute Units</title>
     <link rel="stylesheet" href="../src/css/style.css">
+    <style>
+        li.abs01 {font-size: 0.5in;}
+        li.abs02 {font-size: 1cm;}
+        li.abs03 {font-size: 10mm;}
+        li.abs04 {font-size: 10pt;}
+        li.abs05 {font-size: 2pc;}
+    </style>
 </head>
 <body class="css">
     <nav class="back">
@@ -14,12 +21,26 @@
     </nav>
     <main>
         <header class="mainmenu">
-            <h1>00-template</h1>
+            <h1>09-Absolute Units</h1>
             <img src="../src/imgs/logo-css.png" alt="">
-            <h3>definition</h3>
+            <h3>Specify a fixed length value. It doesn't matter if the screen's width or height changes.</h3>
+            <ul>
+                <li>Inch (in)</li>
+                <li>Centimeter (cm)</li>
+                <li>Millimeter (mm)</li>
+                <li>Point (pt)</li>
+                <li>Pica (pc)</li>
+            </ul>
         </header>
         <section>
             <h2 class="subtitle">Example:</h2>
+            <ul>
+                <li class="abs01">Inch : 0.5in</li>
+                <li class="abs02">Centimeter : 1cm</li>
+                <li class="abs03">Millimeter : 10mm</li>
+                <li class="abs04">Point : 10pt</li>
+                <li class="abs05">Pica : 2pc</li>
+            </ul>
         </section>
     </main>
 </body>

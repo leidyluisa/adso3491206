@@ -3,8 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>oo-templete</title>
+    <title>06-specificity</title>
     <link rel="stylesheet" href="../src/css/style.css">
+    <style>
+        button { /*especificity: 0,0,0,1*/
+            border: none;
+            border-radius: 2rem;
+            /*background-color: #f00 !important; */
+            background-color: #f00;
+            color: white;
+            font-size: 1rem;
+            padding: 0.4rem;
+            display: flex;
+            margin: 2rem auto;
+        }
+        section button.btn { /*especificity: 0,0,1,2*/
+            background-color: #ab7dd9;
+        }
+    </style>
 </head>
 <body class="css">
     <nav class="back">
@@ -14,12 +30,13 @@
     </nav>
     <main>
         <header class="mainmenu">
-            <h1>00-template</h1>
+            <h1>06-specificity</h1>
             <img src="../src/imgs/logo-css.png" alt="">
-            <h3>definition</h3>
+            <h3>Is score/rank that determines which style declaration is ultimately applied to an element.</h3>
         </header>
         <section>
-            <h2 class="subtitle">Example:</h2>
+            <h2 class="subtitle">Example</h2>
+            <button class="btn">This is a button</button>
         </section>
     </main>
 </body>
