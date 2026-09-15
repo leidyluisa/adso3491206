@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-Colors Alpha </title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <style>
+        div.mario {
+            background: url(imgs/mario.png) no-repeat
+                        center / contain;
+            border: 2px solid #fff9;
+            margin: 1rem auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 400px;
+            width: 300px;
+            div {
+                height: 100px;
+                width: 100px;
+                &.box01 { background-color: #fff; }
+                &.box02 { background-color: #fffe; }
+                &.box03 { background-color: #fffd; }
+                &.box04 { background-color: #fffc; }    
+                &.box05 { background-color: #fffb; }
+                &.box06 { background-color: #fffa; }
+                &.box07 { background-color: #fff9; }
+                &.box08 { background-color: #fff8; }    
+                &.box09 { background-color: #fff7; }
+                &.box10 { background-color: #fff6; }    
+                &.box11 { background-color: #fff5; }
+                &.box12 { background-color: #fff4; }
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm46-90a6,6,0,0,1-6,6H102.49l21.75,21.76a6,6,0,1,1-8.48,8.48l-32-32a6,6,0,0,1,0-8.48l32-32a6,6,0,0,1,8.48,8.48L102.49,122H168A6,6,0,0,1,174,128Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu">
+            <h1>12-Color Alpha</h1>
+            <img src="../src/imgs/logo-css.png" alt="">
+            <h3>definition</h3>
+        </header>
+        <section>
+            <h2 class="subtitle">Example:</h2>
+            <div class="mario">
+                <div class="box01"></div>
+                <div class="box02"></div>
+                <div class="box03"></div>
+                <div class="box04"></div>
+                <div class="box05"></div>
+                <div class="box06"></div>
+                <div class="box07"></div>
+                <div class="box08"></div>
+                <div class="box09"></div>
+                <div class="box10"></div>
+                <div class="box11"></div>
+                <div class="box12"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
