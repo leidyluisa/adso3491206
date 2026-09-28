@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replica Sprite</title>
+    <style>
+        body {
+            margin: 0;
+            border: 10px solid #fff;
+            background-color: #17a053;
+            min-height: 100dvh;
+            main{
+                header{
+                    figure.logo {
+                        background: url(imgs/spriteweb.png) no-repeat;
+                        background-position: -25px -420px;
+                        height: 140px;
+                        margin: 2rem auto;
+                        width: 160px;
+                    }
+                }
+            }
+        }
+
+        main {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding-bottom: 40px;
+        }
+
+        figure.logo {
+            background: url(imgs/spriteweb.png) no-repeat;
+            background-position: -15px -10px;
+            height: 100px;
+            margin: 2rem auto;
+            width: 160px;
+            animation: aparecer-arriba 0.8s ease-out, latido 3s ease-in-out 1s infinite;
+        }
+        div.menu {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: aparecer-arriba 0.8s ease-out 0.2s both;
+        }
+
+        a.boton {
+            background-color: #1a4f38;
+            color: #fff;
+            padding: 12px 25px;
+            border-bottom: 8px solid #fff;
+            text-decoration: none;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        a.boton:hover {
+            border-bottom: 8px solid #f1c40f;
+        }
+        .contenedor-tarjetas {
+            background-color: #0a2e1f;
+            padding: 12px;
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 30px;
+            border: 4px solid #0d3d2a;
+        }
+
+        .tarjeta {
+            background-color: #fff9;
+            width: 32%;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            cursor: pointer;
+            padding-bottom: 0;
+            border-radius: 0;
+        }
+        .tarjeta:hover {
+            border-top: #b8b8b8;
+        }
+
+        .tarjeta h3 {
+            background: linear-gradient(to bottom, #e8e8e8, #b8b8b8);
+            margin: 0;
+            padding: 8px 0;
+            font-size: 13px;
+            font-weight: bold;
+            color: #000;
+            border-bottom: 1px solid #999;
+        }
+
+        .imagen-botella-1 {
+            background: url(imgs/spriteweb.png) no-repeat;
+            background-position: -400px -30px; 
+            height: 150px;
+            width: 100%;
+            background-size: 700px;
+        }
+        .imagen-botella-2 {
+            background: url(imgs/spriteweb.png) no-repeat;
+            background-position: -400px -30px; 
+            height: 150px;
+            width: 100%;
+            background-size: 700px;
+        }
+        .imagen-botella-3 {
+            background: url(imgs/spriteweb.png) no-repeat;
+            background-position: -400px -30px; 
+            height: 150px;
+            width: 100%;
+            background-size: 700px;
+        }
+        .bloque-texto {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+
+        .bloque-texto p {
+            width: 70%;
+            font-size: 13px;
+            color: #333;
+            margin: 0;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .logo-pequeno {
+            background: url(imgs/spriteweb.png) no-repeat;
+            background-position: -130px -250px;
+            height: 60px;
+            width: 60px;
+            background-size: 400px;
+            border-radius: 50%;
+        }
+
+        .lata-sprite {
+            background: url(imgs/spriteweb.png) no-repeat;
+            background-position: -50px -95px;
+            height: 100px;
+            width: 60px;
+            background-size: 400px;
+        }
+
+        /* --- PIE DE PÁGINA --- */
+        footer {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 4px;
+            margin-top: 30px;
+        }
+
+        footer:hover {
+            transform: translateY(-3px);
+        }
+
+        .grupo-productos {
+            background: url(imgs/spriteweb.png) no-repeat;
+            background-position: -400px -390px;
+            height: 120px;
+            width: 250px;
+            background-size: 690px;
+            margin: 0 auto 15px auto;
+        }
+
+        .menu-footer {
+            font-size: 10px;
+            font-weight: bold;
+            color: #000;
+            letter-spacing: 0.5px;
+            word-spacing: 2px;
+        }
+        .menu-footer span {
+            cursor: pointer;
+            padding-bottom: 3px;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+            margin: 0 3px;
+        }
+
+        .menu-footer span:hover {
+            color: #000;
+            border-bottom: 3px solid #f1c40f;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <figure class="logo"></figure>
+            <div class="menu">
+                <a href="#" class="boton">INICIO</a>
+                <a href="#" class="boton">NOSOTROS</a>
+                <a href="#" class="boton">PORTAFOLIO</a>
+                <a href="#" class="boton">SERVICIOS</a>
+                <a href="#" class="boton">CONTACTO</a>
+            </div>
+        </header>
+
+        <section class="contenedor-tarjetas">
+            <div class="tarjeta">
+                <h3>Sprite 01</h3>
+                <div class="imagen-botella-1"></div>
+            </div>
+            <div class="tarjeta">
+                <h3>Sprite 02</h3>
+                <div class="imagen-botella-2"></div>
+            </div>
+            <div class="tarjeta">
+                <h3>Sprite 03</h3>
+                <div class="imagen-botella-3"></div>
+            </div>
+        </section>
+
+        <section class="bloques-texto">
+            <div class="bloque-texto">
+                <div class="logo-pequeno"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam minima blanditiis porro corporis incidunt dolorum quas, exercitationem quam voluptatibus maxime perspiciatis, hic iure quos cumque necessitatibus sit architecto facere aperiam fugit voluptates.</p>
+                <div class="lata-sprite"></div>
+            </div>
+            <div class="bloque-texto">
+                <div class="logo-pequeno"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam minima blanditiis porro corporis incidunt dolorum quas, exercitationem quam voluptatibus maxime perspiciatis, hic iure quos cumque necessitatibus sit architecto facere aperiam fugit voluptates.</p>
+                <div class="lata-sprite"></div>
+            </div>
+            <div class="bloque-texto">
+                <div class="logo-pequeno"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam minima blanditiis porro corporis incidunt dolorum quas, exercitationem quam voluptatibus maxime perspiciatis, hic iure quos cumque necessitatibus sit architecto facere aperiam fugit voluptates.</p>
+                <div class="lata-sprite"></div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="grupo-productos"></div>
+            <div class="menu-footer">
+                <span>INICIO</span>
+                <span>NOSOTROS</span>
+                <span>PORTAFOLIO</span>
+                <span>SERVICIOS</span>
+                <span>CONTACTO</span>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
