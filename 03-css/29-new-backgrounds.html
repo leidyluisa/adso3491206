@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>29-New Backgrounds</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <style>
+        section {
+            div.multiples {
+                background: url(imgs/bg3.png),
+                            url(imgs/bg2.png),
+                            url(imgs/bg1.png);
+                border-radius: 0.4rem;
+                outline: 4px solid #fff9;
+                margin: 1rem auto;
+                height: 453px;
+                width: 320px;
+            }
+            div {
+                border-radius: 0.4rem;
+                outline: 4px solid #fff9;
+                height: 200px;
+                margin: 1rem auto;
+                width: 360px;
+
+                &.gradient1 {
+                    background: linear-gradient(to right, red, yellow );
+                }
+                &.gradient2 {
+                    background: linear-gradient(45deg, black, white, black );
+                }
+                &.gradient3 {
+                    background: linear-gradient( #ffcd00 50%,
+                                                 #003087 50%,
+                                                 #003087 75%, 
+                                                 #c8102e 75% );
+                }
+                &.gradient4 {
+                    background: linear-gradient(to right,   white 50%, 
+                                                            black 50%);
+                    background-size: 20px;
+                }
+                &.gradient5 {
+                    background: radial-gradient( circle , pink, black);
+                }
+                 &.gradient6 {
+                    background: radial-gradient(circle, yellow 20%, 
+                                                        red 20%, 
+                                                        red 40%,
+                                                        blue 40%, 
+                                                        blue 60%, 
+                                                        black 60%, 
+                                                        black 80%, 
+                                                        white 80%);
+                }
+                &.gradient7 {
+                    background: conic-gradient(red, blue, white);
+                }
+                &.mask {
+                    background: linear-gradient(to right, green, white, red);
+                    mask-image: url(imgs/mask.svg);
+                    mask-size: 100% 100%;
+                }
+            }
+            h4 {
+                font-size: 8rem;
+                text-align: center;
+                margin: 0;
+                &.clip1 {
+                    background: linear-gradient(45deg, red, green, blue);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                &.clip2 {
+                    background: url(imgs/bgfire.jpg);
+                    background-clip: text;
+                    font-size: 10rem;
+                    text-transform: uppercase;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm46-90a6,6,0,0,1-6,6H102.49l21.75,21.76a6,6,0,1,1-8.48,8.48l-32-32a6,6,0,0,1,0-8.48l32-32a6,6,0,0,1,8.48,8.48L102.49,122H168A6,6,0,0,1,174,128Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu">
+            <h1>29-New Backgrounds</h1>
+            <img src="../src/imgs/logo-css.png" alt="">
+            <h3>Modern background features including multiple background layers, CSS gradients.</h3>
+        </header>
+       <section>
+            <h2 class="subtitle">Bgs Multiples:</h2>
+            <div class="multiples"></div>
+            <h2 class="subtitle">Bgs Gradients:</h2>
+            <h5>linear-gradient(to direction, color1, color2)</h5>
+            <div class="gradient1"></div>
+            <h5>linear-gradient(degrees, color1, color2)</h5>
+            <div class="gradient2"></div>
+            <h5>Colombia Flag</h5>
+            <div class="gradient3"></div>
+            <h5>Vertical Lines</h5>
+            <div class="gradient4"></div>
+            <h5>radial-gradient(shape, color1, color2)</h5>
+            <div class="gradient5"></div>
+            <h5>BullsEye</h5>
+            <div class="gradient6"></div>
+            <h5>conic-gradient(color1, color2)</h5>
+            <div class="gradient7"></div>
+            <h2 class="subtitle">Bgs Clip:</h2>
+            <h4 class="clip1">ADSO</h4>
+            <h4 class="clip2">fire</h4>
+            <h2 class="subtitle">Bg Mask:</h2>
+            <div class="mask"></div>
+        </section>
+    </main>
+</body>
+</html>

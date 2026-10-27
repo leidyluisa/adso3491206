@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>35-Transformation</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <style>
+        section{
+            img {
+                display: block;
+                margin: 2rem auto;
+
+                &.transform1 {
+                    transform: rotate(0.25turn); /*90deg*/
+                }
+                &.transform2 {
+                    transform: scale(.5);
+                }
+                 &.transform3 {
+                    transform: translateX(-100px);
+                }
+                 &.transform4 {
+                    transform: skew(30deg);
+                }
+                 &.transform5 {
+                    transform: rotate(45deg) scale(1.4);
+                }
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm46-90a6,6,0,0,1-6,6H102.49l21.75,21.76a6,6,0,1,1-8.48,8.48l-32-32a6,6,0,0,1,0-8.48l32-32a6,6,0,0,1,8.48,8.48L102.49,122H168A6,6,0,0,1,174,128Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu">
+            <h1>35-Transformation</h1>
+            <img src="../src/imgs/logo-css.png" alt="">
+            <h3>Property (transform) allowing 2D or 3D manipulation of elements, such as translate(), rotate(), scale(), and skew().</h3>
+        </header>
+        <section>
+            <h2 class="subtitle">Rotate: 90deg</h2>
+            <img class="transform1" src="imgs/mario.png" width="180px">
+            <h2 class="subtitle">Scale: 0.5</h2>
+            <img class="transform2" src="imgs/mario.png" width="180px">
+            <h2 class="subtitle">TranslateX: -100px</h2>
+            <img class="transform3" src="imgs/mario.png" width="180px">
+            <h2 class="subtitle">Skew: 30deg</h2>
+            <img class="transform4" src="imgs/mario.png" width="180px">
+            <h2 class="subtitle">Rotate Scale:</h2>
+            <img class="transform5" src="imgs/mario.png" width="180px">
+        </section>
+    </main>
+</body>
+</html>
