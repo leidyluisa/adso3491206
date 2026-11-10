@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40-Steps</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <style>
+        :root {
+            --size: 256px;
+        }
+        section {
+            div.bg {
+                background: url(imgs/bg-steps.png) no-repeat center / cover ;
+                border-radius: 12px;
+                outline: 4px solid #fff;
+                corner-shape: squircle;
+                position: relative;
+                height: 560px;
+
+                div.trainer {
+                    background: url(imgs/steps-all.png) no-repeat;
+                    background-position-x: 0;
+                    transform: scale(.8);
+                    height: var(--size);
+                    width: var(--size);
+                    position: absolute;
+                    bottom: 0;
+                    left: 4rem;
+
+                    animation: 0.6s animTrainer steps(4) infinite ;
+
+                    &.front { background-position-y: calc(var(--size) * 0) ;}
+                    &.left { background-position-y: calc(var(--size) * -1) ;}
+                    &.right { background-position-y: calc(var(--size) * -2) ;}
+                    &.back { background-position-y: calc(var(--size) * -3) ;}
+                    
+                }
+            }
+        }
+@keyframes animTrainer {
+    100% {background-position-x: -1024px ;}
+}
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm46-90a6,6,0,0,1-6,6H102.49l21.75,21.76a6,6,0,1,1-8.48,8.48l-32-32a6,6,0,0,1,0-8.48l32-32a6,6,0,0,1,8.48,8.48L102.49,122H168A6,6,0,0,1,174,128Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu">
+            <h1>40-Steps</h1>
+            <img src="../src/imgs/logo-css.png" alt="">
+            <h3>Timing function (steps()) used in CSS animations to split transitions into discrete frames, commonly used for frame-by-frame sprite animations.</h3>
+        </header>
+        <section>
+            <h2 class="subtitle">Example:</h2>
+            <div class="bg">
+                <div class="trainer front"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
