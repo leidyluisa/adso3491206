@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            transition: all 0.4s ease;
+        }
+        body {
+            background: linear-gradient(transparent, skyblue),
+             url(imgs/fondo.jpg) no-repeat center top / contain ;
+            background-attachment: fixed;
+            font-family: sans-serif;
+
+            main {
+                background: linear-gradient(#000, transparent 96%);
+                border-radius: 12px;
+                corner-shape: squircle;
+                padding: 1rem;
+                min-height: 100dvh;
+
+                img.logo {
+                    width: 480px;
+                    display: block;
+                    margin: 1rem auto;
+                    animation: 8s animLogo infinite ease;
+                }
+                section.characters {
+                    margin: 4rem auto;
+                    width: 1440px;
+                    object-fit: cover;
+                    
+                    figure.character {
+                        border-radius: 12px;
+                        outline: 4px solid #000;
+                        corner-shape: squircle;
+                        height: 260px;
+                        display: inline-block;
+                        overflow: hidden;
+                        padding: 0;
+                        position: relative;
+                        transition: all 5s ease;
+                        margin: 0 0.5rem;
+                        width: 340px;
+
+                        &.character01 {
+                            background: url(imgs/Ram.webp) no-repeat;
+                            background-size: 100%;
+                           
+                        }
+                        &.character02 {
+                            background: url(imgs/rem.jpg) no-repeat;
+                            background-size: 100%;
+                        }
+                        &.character03 {
+                            background: url(imgs/Roswaal.jpg) no-repeat;
+                            background-size: 100%;
+                            background-position: center top;
+                        }
+                        &.character04 {
+                            background: url(imgs/Beatrice.jpg) no-repeat;
+                            background-size: 100%;
+                        }
+                        &:hover {
+                            background-size: 110%;
+
+                            figcaption {
+                                color: #fff353;
+                                bottom: 0;
+                            }
+                        }
+                        figcaption {
+                            background-color: #000b;
+                            color: #fff;
+                            font-size: 1.4rem;
+                            border-top: 4px solid #000;
+                            position: absolute;
+                            bottom: -3rem;
+                            margin: 0;
+                            backdrop-filter: blur(4px);
+                            padding: 1rem 1rem 4rem 1rem;
+                            transition: all 0.4s 0.2s ease-out;
+                            width: 100%;
+                        }
+                    }
+                }
+                section.main-characters {
+                    article{
+                        outline: 4px solid #000;
+                        background: #000a;
+                        border-radius: 12px;
+                        color: #fff;
+                        corner-top-shape: squircle;
+                        padding: 1rem;
+                        margin: 2rem auto;
+                        width: 1388px;
+
+                        img.aside {
+                            display: inline-block;
+                            vertical-align: top;
+                        }
+                        img {
+                            filter: drop-shadow(0 0 8px #fff353);
+                            object-fit: contain;
+                            height: 340px;
+                            margin-right: 2rem;
+                            width: 340px;
+                        }
+                        aside {
+                            width: 960px;
+                            display: inline-block;
+                            
+
+                            h2 {
+                                color: #fff353;
+                                margin-top: 0;
+                            }
+                            p {
+                                text-align: justify;
+                                line-height: 2rem;
+                            }
+                        }
+                        &:hover {
+                            background-color: #000c;
+                            backdrop-filter: blur(4px);
+
+                            aside {
+                                h2{
+                                    color: #fff353;
+                                    margin-top: 0;
+                                }
+
+                                p {
+                                    margin: 1rem solid red;
+                                    text-align: justify;
+                                    line-height: 2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @keyframes animLogo {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        @media (max-width: 1470px) {
+            body {
+                main {
+                    section.characters {
+                        width: 718px;
+
+                        figure.character {
+                        margin-bottom: 1rem;
+                        }
+                    }
+                    section.main-characters {
+                        article {
+                            width: 670px;
+
+                            img {
+                                margin-right: 1rem;
+                                width: 200px;
+                            }
+                            aside {
+                                width: 480px;
+                                
+                                p {
+                                    line-height: 1.6rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: 746px) {
+            body {
+                main {
+                    img.logo {
+                        width: 340px;
+                    }
+                    section.characters {
+                        width: 718px;
+                    }
+                    figure.characters {
+                        width: 400px;
+                        margin: 0.5rem auto;
+                    }
+                    section.main-characters {
+                        article {
+                            width: 670px;
+
+                            img {
+                                margin-right: 1rem;
+                                display: block;
+                                width: 200px;
+                                margin: 0 auto;
+                            }
+                            aside {
+                                display: block;
+                                width: 370px;
+                            }
+                       }
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <main>
+        <img class="logo" src="imgs/logo_RZ.png" alt="RZ Logo">
+        <section class="characters">
+            <figure class="character character01">
+                <figcaption>Ram</figcaption>
+            </figure>
+            <figure class="character character02">
+                <figcaption>Rem</figcaption>
+            </figure>
+            <figure class="character character03">
+                <figcaption>Roswaal</figcaption>
+            </figure>
+            <figure class="character character04">
+                <figcaption>Beatrice</figcaption>
+            </figure>
+        </section>
+        <section class="main-characters">
+            <article>
+                <img src="imgs/Emilia.jpg" alt="Emilia">
+                <aside>
+                    <h2>Emilia</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolore voluptate eligendi cum dolor eum mollitia rem, iste libero placeat sint debitis quo laudantium molestias nulla maxime dolores sed alias facere fugit reiciendis omnis at. Aliquam similique earum animi numquam. Doloremque, sed. Deleniti, ipsum ducimus dolorem quia porro architecto odio facilis maxime eum rerum facere eaque voluptate, nesciunt vero! Placeat expedita alias iste repudiandae at, nesciunt ullam consectetur, eaque quo ratione dignissimos dolores repellat ipsam aut reiciendis voluptas sint minus labore dolorem impedit a ducimus enim. Voluptates aliquam rerum amet adipisci ratione tenetur optio tempore, id a saepe quis consectetur?</p>
+                </aside>
+            </article>
+            <article>
+                <img src="imgs/subaru.webp" alt="Subaru Natsuki">
+                <aside>
+                    <h2>Subaru Natsuki</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolore voluptate eligendi cum dolor eum mollitia rem, iste libero placeat sint debitis quo laudantium molestias nulla maxime dolores sed alias facere fugit reiciendis omnis at. Aliquam similique earum animi numquam. Doloremque, sed. Deleniti, ipsum ducimus dolorem quia porro architecto odio facilis maxime eum rerum facere eaque voluptate, nesciunt vero! Placeat expedita alias iste repudiandae at, nesciunt ullam consectetur, eaque quo ratione dignissimos dolores repellat ipsam aut reiciendis voluptas sint minus labore dolorem impedit a ducimus enim. Voluptates aliquam rerum amet adipisci ratione tenetur optio tempore, id a saepe quis consectetur?</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
