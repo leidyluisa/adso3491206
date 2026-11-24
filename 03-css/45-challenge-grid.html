@@ -16,34 +16,32 @@
                 "f f g";
             grid-gap: 10px;
             min-height: 80dvh;
-           
 
             .a { 
                 grid-area: a;
                 background: url(imgs/dormilon.webp) no-repeat;
                 background-size: 100% 100%;
-             }
+            }
             .b { 
                 grid-area: b;
                 background: url(imgs/Feliz.webp) no-repeat;
                 background-size: 100% 100%;
-                
-             }
+            }
             .c { 
                 grid-area: c;
                 background: url(imgs/gruñon.webp) no-repeat;
                 background-size: 100% 100%;
-             }
+            }
             .d { 
                 grid-area: d;
                 background: url(imgs/Sabio.webp) no-repeat;
                 background-size: 100% 100%;
-             }
+            }
             .e { 
                 grid-area: e;
                 background: url(imgs/timido.webp) no-repeat;
                 background-size: 100% 100%;
-             }
+            }
             .f { 
                 grid-area: f; 
                 background: url(imgs/tontin.jpg) no-repeat;
@@ -53,7 +51,7 @@
                 grid-area: g;
                 background: url(imgs/mocoso.jpg) no-repeat;
                 background-size: 100% 100%;
-             }
+            }
 
             & * {
                 background: #663399;
@@ -63,6 +61,59 @@
                 justify-content: center;
                 align-items: center;
                 border-radius: 12px;
+            }
+        }
+
+        .gallery2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:
+                "h h i k"
+                "h h n n"
+                "j l n n";
+            grid-gap: 10px;
+            min-height: 80dvh;
+
+            & * {
+                background: #663399;
+                color: #d8b3fe;
+                font-family: Arial;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 12px;
+            }
+
+            .h { 
+                grid-area: h;
+                background: url(imgs/Blancanieves.webp) no-repeat;
+                background-size: 100% 100%;
+            }
+            .i { 
+                grid-area: i;
+                background: url(imgs/principe.jpg) no-repeat;
+                background-size: 100% 100%;
+            }
+            .j { 
+                grid-area: j;
+                background: url(imgs/cazadorr) no-repeat;
+                background-size: 100% 100%;
+            }
+            .k { 
+                grid-area: k;
+                background: url(imgs/espejo.jpg) no-repeat;
+                background-size: 100% 100%;
+            }
+            .l { 
+                grid-area: l;
+                background: url(imgs/principeyblanca.jpg) no-repeat;
+                background-size: 100% 100%;
+            }
+            .n { 
+                grid-area: n;
+                background: url(imgs/bruja.jpg) no-repeat;
+                background-size: 100% 100%;
             }
         }
     </style>
@@ -80,15 +131,25 @@
             <h3>Irregulary Gallery: Grid Areas</h3>
         </header>
         <section>
-            <h2 class="subtitle">Example:</h2>
+            <h2 class="subtitle">Example 01:</h2>
             <div class="gallery">
                 <div class="a"></div>
-                <div class="b"> </div>
+                <div class="b"></div>
                 <div class="c"></div>
                 <div class="d"></div>
                 <div class="e"></div>
-                <div class="f"> </div>
+                <div class="f"></div>
                 <div class="g"></div>
+            </div>
+
+            <h2 class="subtitle">Example 02:</h2>
+            <div class="gallery2">
+                <div class="h"></div>
+                <div class="i"></div>
+                <div class="j"></div>
+                <div class="k"></div>
+                <div class="l"></div>
+                <div class="n"></div>
             </div>
         </section>
     </main>
