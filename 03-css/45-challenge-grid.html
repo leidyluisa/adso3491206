@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>45-Challenge Grind</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:
+                "a b c"
+                "d b e"
+                "f f g";
+            grid-gap: 10px;
+            min-height: 80dvh;
+           
+
+            .a { 
+                grid-area: a;
+                background: url(imgs/dormilon.webp) no-repeat;
+                background-size: 100% 100%;
+             }
+            .b { 
+                grid-area: b;
+                background: url(imgs/Feliz.webp) no-repeat;
+                background-size: 100% 100%;
+                
+             }
+            .c { 
+                grid-area: c;
+                background: url(imgs/gruñon.webp) no-repeat;
+                background-size: 100% 100%;
+             }
+            .d { 
+                grid-area: d;
+                background: url(imgs/Sabio.webp) no-repeat;
+                background-size: 100% 100%;
+             }
+            .e { 
+                grid-area: e;
+                background: url(imgs/timido.webp) no-repeat;
+                background-size: 100% 100%;
+             }
+            .f { 
+                grid-area: f; 
+                background: url(imgs/tontin.jpg) no-repeat;
+                background-size: 100% 100%;
+            }
+            .g { 
+                grid-area: g;
+                background: url(imgs/mocoso.jpg) no-repeat;
+                background-size: 100% 100%;
+             }
+
+            & * {
+                background: #663399;
+                color: #d8b3fe;
+                font-family: Arial;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 12px;
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm46-90a6,6,0,0,1-6,6H102.49l21.75,21.76a6,6,0,1,1-8.48,8.48l-32-32a6,6,0,0,1,0-8.48l32-32a6,6,0,0,1,8.48,8.48L102.49,122H168A6,6,0,0,1,174,128Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mainmenu">
+            <h1>45-Challenge Grind</h1>
+            <img src="../src/imgs/logo-css.png" alt="">
+            <h3>Irregulary Gallery: Grid Areas</h3>
+        </header>
+        <section>
+            <h2 class="subtitle">Example:</h2>
+            <div class="gallery">
+                <div class="a"></div>
+                <div class="b"> </div>
+                <div class="c"></div>
+                <div class="d"></div>
+                <div class="e"></div>
+                <div class="f"> </div>
+                <div class="g"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

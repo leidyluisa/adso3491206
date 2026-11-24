@@ -122,7 +122,7 @@ body {
         header.mainmenu{
             & internal{
                 h1{
-                    fzont-size: 2rem;
+                    font-size: 2rem;
                 }
                 img{
                     height: 120px;
